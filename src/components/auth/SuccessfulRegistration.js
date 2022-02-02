@@ -4,10 +4,12 @@ import { Button, ButtonClass, ButtonSize } from '@/src/components/ui'
 import { URLS } from '@/src/constants'
 
 export const SuccessfulRegistrationContainer = styled.div`
-  background-color: ${(props) => props.theme.colors.primaryColor};
-  color: ${(props) => props.theme.colors.white};
   width: 100%;
   max-width: ${(props) => props.theme.breakpoint.md};
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  background-color: ${(props) => props.theme.colors.primaryColor};
+  color: ${(props) => props.theme.colors.white};
 
   & > div {
     display: flex;

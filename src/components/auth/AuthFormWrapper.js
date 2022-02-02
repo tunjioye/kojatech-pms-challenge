@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import { URLS } from '@/src/constants'
 
 export const AuthFormContainer = styled.div`
-  background-color: ${(props) => props.theme.colors.white};
-  border: 1px solid rgba(0, 0, 0, 0.02);
-  border-radius: 5px;
   width: 100%;
   max-width: ${(props) => props.theme.breakpoint.md};
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  background-color: ${(props) => props.theme.colors.white};
+  border: 1px solid rgba(0, 0, 0, 0.02);
   padding: 2rem;
 
   & > div {

@@ -11,12 +11,18 @@ const AuthLayoutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/auth/auth-layout-bg.svg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('/auth/auth-layout-bg-effect-1.svg'), url('/auth/auth-layout-bg-effect-2.svg');
+  background-size: 260px, auto;
+  background-position: bottom left, calc(100% + 96px) 10vh;
   background-repeat: no-repeat;
   background-color: ${bgColor};
   padding: 1rem;
+
+  /* media queries */
+  @media (min-width: ${(props) => props.theme.breakpoint.sm}) {
+    background-size: auto;
+    background-position: bottom left, right 20vh;
+  }
 `
 
 export const AuthLayout = ({ pageTitle, children }) => (
