@@ -2,17 +2,30 @@
   "name": "pms-challenge",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "export": "next export",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
+    "clsx": "^1.1.1",
     "next": "12.0.10",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.8.4",
+    "qs": "^6.10.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-no-ssr": "^1.1.0",
+    "react-select": "^5.2.2",
+    "react-transition-group": "^4.4.2",
+    "simpler-state": "^1.0.3",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-styled-components": "^2.0.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10"
   }
