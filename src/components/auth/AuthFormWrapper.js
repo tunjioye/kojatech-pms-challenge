@@ -28,7 +28,6 @@ export const AuthFormWrapper = ({ children, title }) => (
     <div>
       <Link href={URLS.LOGIN_URL}>
         <a>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/pms-logo.svg" height="40px" alt="PMS" />
         </a>
       </Link>

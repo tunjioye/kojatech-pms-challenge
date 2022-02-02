@@ -1,19 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
-import Router from 'next/router'
 import { FormInput, SelectInput } from '@/src/components/ui/inputs'
 import { Flex, Button, ButtonClass, ButtonSize } from '@/src/components/ui'
 import { URLS } from '@/src/constants'
 import AuthFormWrapper from './AuthFormWrapper'
+import SuccessfulRegistration from './SuccessfulRegistration'
 import { mapSelectOptions } from '@/src/utils'
 
 export const RegisterForm = () => {
+  const [justRegistered, setJustRegistered] = useState(false)
+
   const submitRegisterForm = (e) => {
     e.preventDefault()
     const formData = new FormData(e.target)
     console.log('submitted form data: ', Object.fromEntries(formData))
-    Router.push(URLS.DASHBOARD_URL)
+    setJustRegistered(true)
   }
+
+  if (justRegistered) return <SuccessfulRegistration />
 
   return (
     <AuthFormWrapper title="Create your organization">
