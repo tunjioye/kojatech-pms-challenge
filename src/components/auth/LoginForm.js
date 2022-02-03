@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
-import { FormInput } from '@/src/components/ui/inputs'
+import { FormInput, CheckboxInput } from '@/src/components/ui/inputs'
 import { Flex, Button, ButtonClass, ButtonSize } from '@/src/components/ui'
 import { URLS } from '@/src/constants'
 import AuthFormWrapper from './AuthFormWrapper'
@@ -23,7 +23,7 @@ export const LoginForm = () => {
             <FormInput label="Password" type="password" name="password" required />
 
             <Flex justify="space-between">
-              <div className="color-grey">Remember me</div>
+              <CheckboxInput label="Remember me" name="remember_me" />
 
               <Link href={URLS.FORGOT_PASSWORD_URL}>
                 <a>Forgot Password?</a>

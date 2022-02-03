@@ -4,6 +4,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 export const theme = {
   colors: {
     black: '#000000',
+    checkboxDefaultBg: '#D4D7DA',
     dividerColor: '#C2C9D1',
     green: '#00AC26',
     inputBorder: '#D1DCDE',
